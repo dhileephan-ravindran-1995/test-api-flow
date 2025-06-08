@@ -19,4 +19,7 @@ output application/json
 			</ee:message>
 		</ee:transform>
 	</flow>
+	<flow name="test-api-flowFlow1" doc:id="ff1670b0-14e3-44ac-95da-efef512027da" >
+		<logger level="INFO" doc:name="Logger" doc:id="8d0e1757-b953-42cd-9f93-397e8d4d8f53" />
+	</flow>
 </mule>
