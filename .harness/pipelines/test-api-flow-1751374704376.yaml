@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_dhileephan_ravindran_1995_test_api_flow_1751374726519
+  name: Build test-api-flow
+  orgIdentifier: default
+  projectIdentifier: First_Project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1751374664991
+        repoName: dhileephan-ravindran-1995/test-api-flow
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
