@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_dhileephan_ravindran_1995_test_api_flow_1751374726519-pr-trigger-input-set
+  identifier: Build_dhileephan_ravindran_1995_test_api_flow_1751374726519prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: First_Project
+  pipeline:
+    identifier: Build_dhileephan_ravindran_1995_test_api_flow_1751374726519
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
