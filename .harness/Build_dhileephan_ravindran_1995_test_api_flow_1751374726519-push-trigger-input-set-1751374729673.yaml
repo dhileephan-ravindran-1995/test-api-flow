@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_dhileephan_ravindran_1995_test_api_flow_1751374726519-push-trigger-input-set
+  identifier: Build_dhileephan_ravindran_1995_test_api_flow_1751374726519pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: First_Project
+  pipeline:
+    identifier: Build_dhileephan_ravindran_1995_test_api_flow_1751374726519
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
